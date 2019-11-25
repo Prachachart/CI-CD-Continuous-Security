@@ -1,11 +1,13 @@
-# CI-CD-Security-Posture-Management-or-CCSPM
+# CI/CD Security Posture Management or CCSPM
 Implementing Continous Security in the CI/CD Toolchain
 
 The rise of security in the cloud and cloud native archirtecture, it is important how to architect continuous security in all the perimeters.
-These perimeters have evolves into 3 main categories*
+These perimeters have evolves into 3 main categories:
+
 1- Data Plane
 2- Identity
 3- Control Plane
+
 These 3 categories are also covered with the combination of the 3 security standards with CSPM, CWP and CASB.
 the Data Plane covers the security risks from the apps and networks which could be IaaS or SaaS and Posture Management covers Related to Identity and Access Mgmt, 
 Resource configurations and standards like CIS, NIST, PCI etc...Identity is also critical as identity and access applies to more than users but ressources such as S3, EC2 via roles.
