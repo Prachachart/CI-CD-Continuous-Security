@@ -27,4 +27,32 @@ policy violations.
 
 With SecDevOPs, the goal is to implement security checks and balances in the CI?CD Toolchain. This will allow the CI/CD toolchain Security Posture Management
 
+2 main areas should be covered and multiple jenkins pipelines would have to created*
+
+## Continuous Integration:
+
+ Build code >>> Test >>> SAST/DAST >>> deploy pipeline
+ 
+## Continuous Deployment:
+
+  ### Deploy Check Point Security Policy using Pipeline-A
+  
+  Git (Terraform) >>> Jenkins Pipeline-A >>> CP CGM >>> CP GW
+  Git (Terraform or K8s Manifest) >>> Jenkins Pipeline >>> Pods with container(s) in K8s cluster.
+
+  #### Perform CCSPM with Pipeline-B to check for violation 
+  
+  ### Perform Remediation and alert by changing config drift or re-deploy CP security policy.
+  
+  Git (Terraform) >>> jenkins Pipeline-C >>> CP CGM >>> CP GW
+  Git (TF or K8s Manifest) >>> Jenkins Pipeline-D >>> Pods with containers
+  
+  
+   
+   
+
+
+
+
+
 
